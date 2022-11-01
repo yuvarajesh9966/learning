@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="./calculator.js"></script>
+</head>
+<body style="background-image: radial-gradient(circle,pink,green,blue);">
+    <center>
+        <fieldset style="width:500px ;height: 300px;margin-top: 200px;border-color:black ;">
+            <h1 style="text-decoration: underline;">Calculations</h1>
+            <fieldset style="width: 200px;height:30px" id="num3">
+                <legend style="text-align: center;">Answer</legend>
+                <div id="answer"></div>
+            </fieldset>
+            <fieldset style="width: 200px;height:30px">
+                <legend style="text-align: center;">Number 1</legend>
+                <input type="number" style="background: transparent;border:0px;outline:0px" id="num1">
+            </fieldset>
+            <fieldset style="width: 200px;height:30px">
+                <legend style="text-align: center;">Number 2</legend>
+                <input type="number" style="background: transparent;border:0px;outline:0px" id="num2">
+            </fieldset>
+            <input type="radio" name="option" onchange="addition()">+</input>
+            <input type="radio" name="option" onchange="subtraction()">-</input>
+            <input type="radio" name="option" onchange="division()">/</input>
+            <input type="radio" name="option" onchange="multiplication()">*</input>
+            
+            
+        </fieldset>
+    </center>
+</body>
+</html>
